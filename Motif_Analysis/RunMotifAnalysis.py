@@ -23,50 +23,50 @@ def main():
     # Step 2: Choose multiple sample fasta files
     sample_paths = choose_sample_files()
 
-    # Construct the command for Z-scores-1-spaced-with-combined-unique.py
+    # Construct the command for Z-scores-1-spaced.py
     command_1_spaced = [
         "python",
-        "Z-scores-1-spaced-with-combined-unique.py",
+        "Z-scores-1-spaced.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-1mer-with-combined.py
+    # Construct the command for Z-scores-1mer.py
     command_1mer = [
         "python",
-        "Z-scores-1mer-with-combined.py",
+        "Z-scores-1mer.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-2-spaced-with-combined-unique.py
+    # Construct the command for Z-scores-2-spaced.py
     command_2_spaced = [
         "python",
-        "Z-scores-2-spaced-with-combined-unique.py",
+        "Z-scores-2-spaced.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-2mer-with-combined-unique.py
+    # Construct the command for Z-scores-2mer.py
     command_2mer = [
         "python",
-        "Z-scores-2mer-with-combined-unique.py",
+        "Z-scores-2mer.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-3mer-with-combined-unique.py
+    # Construct the command for Z-scores-3mer.py
     command_3mer = [
         "python",
-        "Z-scores-3mer-with-combined-unique.py",
+        "Z-scores-3mer.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-aaPerPosition-fixdSTD.py
+    # Construct the command for Z-scores-aaPerPosition.py
     command_aa_per_position = [
         "python",
-        "Z-scores-aaPerPosition-fixdSTD.py",
+        "Z-scores-aaPerPosition.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
