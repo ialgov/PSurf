@@ -23,50 +23,50 @@ def main():
     # Step 2: Choose multiple sample fasta files
     sample_paths = choose_sample_files()
 
-    # Construct the command for Z-scores-1-spaced.py
+    # Construct the command for Z-scores-1-spaced-with-combined-unique.py
     command_1_spaced = [
         "python",
-        "Z-scores-1-spaced.py",
+        "N-log2-Z-scores-1-spaced-with-combined-unique.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-1mer.py
+    # Construct the command for Z-scores-1mer-with-combined.py
     command_1mer = [
         "python",
-        "Z-scores-1mer.py",
+        "N-log2-Z-scores-1mer-with-combined.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-2-spaced.py
+    # Construct the command for Z-scores-2-spaced-with-combined-unique.py
     command_2_spaced = [
         "python",
-        "Z-scores-2-spaced.py",
+        "N-log2-Z-scores-2-spaced-with-combined-unique.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-2mer.py
+    # Construct the command for Z-scores-2mer-with-combined-unique.py
     command_2mer = [
         "python",
-        "Z-scores-2mer.py",
+        "N-log2-Z-scores-2mer-with-combined-unique.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-3mer.py
+    # Construct the command for Z-scores-3mer-with-combined-unique.py
     command_3mer = [
         "python",
-        "Z-scores-3mer.py",
+        "N-log2-Z-scores-3mer-with-combined-unique.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
 
-    # Construct the command for Z-scores-aaPerPosition.py
+    # Construct the command for Z-scores-aaPerPosition-fixdSTD.py
     command_aa_per_position = [
         "python",
-        "Z-scores-aaPerPosition.py",
+        "N-log2-Z-scores-aaPerPosition-fixdSTD.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
@@ -74,7 +74,7 @@ def main():
     # Construct the command for Z-scores-dipeptideCorrHeat.py
     command_dipeptide_corr_heat = [
         "python",
-        "Z-scores-dipeptideCorrHeat.py",
+        "N-log2-Z-scores-dipeptideCorrHeat.py",
         "--reference", reference_path,
         "--samples", *sample_paths
     ]
